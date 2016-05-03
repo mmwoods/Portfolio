@@ -1,0 +1,27 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>404</title>
+        <!-- StyleSheets -->
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Home: Section 1. -->
+        <header id="home">
+            <section class="nyc-bg">
+                <div class="container top-spacing">
+                    <h1 class="title">Mitchell <span>Woods</span></h1>
+                </div>
+            </section>
+        </header>
+        
+         <!-- Contact: Section 4. -->
+        <section id="404error" class="grey-bg section-padding">
+            <div class="container">
+                <h1>404 Error</h1>
+                <div class="line"></div>
+                <p class="center-text">The page you were looking for could not be found, click the button below to go to the home page.</p>
+                <p class="center-text button-contact"><a href="http://mitchellmwoods.com">Home Page</a></p>
+        </section>
+    </body> 
