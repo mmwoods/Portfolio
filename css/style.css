@@ -10,6 +10,10 @@
 /*================================================*/
 .top-spacing {padding-top: 525px;}
 
+.center-align{
+    text-align: center;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -29,18 +33,45 @@
     margin-bottom: 75px;
 }
 
+.line-white{
+    background: white;
+    margin-bottom: 50px;
+}
+
 .margin-bottom {
     margin-bottom: 30px;
     background: #8c9398;
 }
 
+.margin-top-fifty {
+    margin-top: 50px;
+}
+
+.left-align{
+    display: inline-block;
+    vertical-align: top;
+    left: 0;
+}
+
+.right-aling{
+    display: inline-block;
+    vertical-align: top;
+    right: 0;
+}
+
 .grey-bg {background: #F5F5F5;}
+
+.blue-bg {background: #9DCEFF;}
 
 .footer-spacing {
     padding-bottom: 50px;
     padding-top: 50px;
     text-transform: uppercase;
     letter-spacing: 10px;
+}
+
+#resume{
+    margin-top: 9px;
 }
 
 /* - 2.1 Layout: Media Queries
@@ -72,6 +103,11 @@
 /*================================================*/
 html {text-align: center;}
 
+.white{
+    color: white;
+    text-align: center;
+}
+
 h1 {
     font-size: 40px;
     font-weight: 400;
@@ -82,6 +118,15 @@ h1 {
 }
 
 h1 span {color: black;}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 12px;
+    color: black;
+    text-transform: uppercase;
+}
 
 p {
     text-align: justify;
@@ -272,3 +317,9 @@ p {
 /* Rules for using icons as black on a light background. */
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
 .material-icons.md-dark.md-active { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { 
+    color: rgba(255, 255, 255, 1);
+    padding-top: 25px;
+}
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
