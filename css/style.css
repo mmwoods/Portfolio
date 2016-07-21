@@ -323,3 +323,12 @@ p {
     padding-top: 25px;
 }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+#logo {
+    position: fixed;
+    z-index: 1000;
+    top: 25px;
+    left: 25px;
+    width: 10%;
+    height: 10%;
+    border: none;
+}
