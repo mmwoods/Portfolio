@@ -1,0 +1,46 @@
+/* Global Styles */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Font Styles */
+h1 {
+    font-size: 50px;
+    color: #333333;
+    font-weight: 400;
+}
+h2 {
+    line-height: 28px;
+    font-size: 20px;
+    text-align: center;
+    color: #496274;
+    font-weight: 300;
+}
+h3 {
+    font-size: 32px;
+    color: #333333;
+    font-weight: 300;
+}
+h4 {
+    font-size: 18px;
+    text-align: right;
+    color: #95BBDB;
+    font-weight: 300;
+}
+
+/* Image Styles */
+img {
+    top: -130px;
+    position: relative;
+    box-shadow: 0px 6px 40px rgba(149, 187, 219, 0.5);
+}
+
+/* Offsets */
+.offset-top {
+    margin-top: 215px;
+}
+
+/* Backgrounds */
+.bg-grey {
+    background: #F3F5F7;
+}
