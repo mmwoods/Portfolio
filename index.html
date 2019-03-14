@@ -1,20 +1,14 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<title>Mitchell Woods</title>
-        <meta name=viewport content="width=device-width, initial-scale=1">
-        <!-- Favicons -->
-        <!-- StyleSheets -->
-		<link href="css/reset.css" rel="stylesheet" type="text/css">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-        <!-- JavaScript -->
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script async src="js/grid-buttons.js"></script>
-        <!-- Favicon -->
-        <link href="images/icon-mw.png" rel="icon" type="image/png">
-        <!-- Google Web Fonts -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="A Brisbane based Front End Developer and Designer, experienced with ES6, React, and eCommerce."/>
+        <title>Mitchell Woods • Front End Developer</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
         <!-- Google Analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,299 +18,178 @@
 
             ga('create', 'UA-71164611-1', 'auto');
             ga('send', 'pageview');
-
         </script>
         <meta name="google-site-verification" content="fe2WJjyE4r0uQMkqXZ2p-v5s_TBGWkd7QoiU-QHp9O8" />
     </head>
     <body>
-        <!-- Home: Section 1. -->
-        <header id="home">
-            <section class="nyc-bg">
-                <div class="container top-spacing">
-                    <h1 class="title">MITCHELL <span>WOODS</span></h1>
-                </div>
-            </section>
-        </header>
-            
-        <!-- About: Section 2. -->
-        <section id="about" class="grey-bg section-padding">
-            <div class="container">
-                <h1>About</h1>
-                <div class="line"></div>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand logo" href="#">mitchell woods</a>
 
-                <p>Mitchell Woods is a third year Information Technology student, majoring in Software & User Experience Design at the University of Queensland. For more information, have a look at the attached resume below.</p>
-                
-                <div class="margin-top-fifty">
-                    <a href="files/Mitchell_Woods_Resume.pdf">
-                        <h2 id="resume" class="left-align">Resume</h2>
-                        <i class="right-align material-icons md-48 md-dark.md-active">assignment</i>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active pr-3">
+                        <a class="nav-link" href="#">intro <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#experience">experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+                <div class="col-12 text-center mt-5">
+                    <h1>Front End Developer and Designer</h1>
+                </div>
+                <div class="col-12 col-lg-10 col-xl-6 text-center pt-2">
+                    <h2>Passionate about how design affects user’s interactions and understanding, specifically through minimalist style.</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="container-fluid mt-5">
+            <div class="row justify-content-center bg-grey offset-top">
+                <div class="col-10 text-center">
+                    <a href="#project-1">
+                        <img class="img-fluid negative-offset-top shadow" src="images/bespoke.jpg" alt="Bespoke Premium Theme">
                     </a>
                 </div>
             </div>
-        </section>
-        
-        <!-- Skills: Section 2A. -->
-        <section id="skills" class="blue-bg section-padding">
+        </div>
+
+        <!-- Projects -->
+        <div class="bg-grey pb-5">
             <div class="container">
-                <h1 class="white">Skills</h1>
-                <div class="line line-white"></div>
-                
-                    <div class="column">
-                        <i class="right-align material-icons md-48 md-light">explore</i>
-                        <p class="white">Website Design</p>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 text-right pb-5">
+                        <h3>Projects I have been working on</h3>
+                        <h4 class="text-uppercase">Currently focusing on React</h4>
                     </div>
-                    
-                    <div class="column">
-                        <i class="right-align material-icons md-48 md-light">important_devices</i>
-                        <p class="white">WordPress</p>
-                    </div>
-                    
-                    <div class="column">
-                        <i class="right-align material-icons md-48 md-light">format_shapes</i>
-                        <p class="white">Branding &amp; Logos</p>
-                    </div>
-                    
-                    <div class="column">
-                        <i class="right-align material-icons md-48 md-light">content_paste</i>
-                        <p class="white">Graphic Design</p>
-                    </div>
-                    
-                    <div class="column">
-                        <i class="right-align material-icons md-48 md-light">touch_app</i>
-                        <p class="white">Interactive Applications</p>
-                    </div>
-                    
-                    <div class="column">
-                        <i class="right-align material-icons md-48 md-light">3d_rotation</i>
-                        <p class="white">3D Modelling</p>
-                    </div>
-                    
-                    <div class="column">
-                        <i class="right-align material-icons md-48 md-light">store</i>
-                        <p class="white">eCommerce</p>
-                    </div>
-            </div>
-        </section>
-        
-        <!-- Portfolio: Section 3. -->
-        <section id="portfolio" class="section-padding">
-            <div class="container">
-                <h1>Portfolio</h1>
-                <div class="line"></div>
-                
-                <!-- Buttons: Section 3.1 -->
-                <div id="all" class="all-button button">
-                    <i class="material-icons md-36 md-dark.md-active">home</i>
-                </div>
-                <div id="store" class="store-button button">
-                    <i class="material-icons md-36 md-dark">store</i>
-                </div>
-                <div id="apps" class="apps-button button">
-                    <i class="material-icons md-36 md-dark">touch_app</i>
-                </div>
-                <div id="web" class="web-button button">
-                    <i class="material-icons md-36 md-dark">explore</i>
-                </div>
-                <div id="3d" class="3d-button button">
-                    <i class="material-icons md-36 md-dark">3d_rotation</i>
-                </div>
-                <div id="graphic" class="graphic-button button">
-                    <i class="material-icons md-36 md-dark">content_paste</i>
                 </div>
             </div>
-                
-            <!-- Grid: Section 3.2 -->
-            <div class="container-fullwidth">
-                    <!-- Portfolio: Item 1. -->
-                    <div class="all store web column">
-                        <img id="astasci" class="img-responsive" src="images/store-astasci.jpg" alt="AstaSCI">
-                        <div class="caption">
-                            <h1>AstaSCI</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">Front-End</li>
-                                <li class="work">eCommerce</li>
-                                <li class="work">Marketing</li>
-                                <li class="work">Branding</li>
-                            </ul>
+        </div>
+
+        <div class="bg-gradient">
+            <div class="container pt-5 pb-5">
+                <!-- Item 1 -->
+                <div id="project-1" class="row position-relative negative-offset-top-sm">
+                    <div class="col-12 col-lg-6">
+                        <a href="https://bespoketheme.neto.com.au/" target="_blank" rel="noreferrer">
+                            <img class="img-fluid shadow" src="images/bespoke.jpg" alt="Bespoke Premium Theme">
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-2 pl-lg-5 pt-lg-5">
+                        <h5 class="pt-4 mt-1">Bespoke Premium Theme</h5>
+                        <p>The first drag & drop, Bootstrap 4, based theme on the Neto eCommerce platform. Featuring a component based design, to allow for easier code maintenance, readability, and additions.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>HTML5/CSS3</strong> • Less, Gulp</li>
+                            <li><strong>JavaScript</strong> • jQuery, AJAX</li>
+                            <li><strong>Frameworks</strong> • Bootstrap 4</li>
+                            <li><strong>Design</strong> • Figma</li>
+                            <li><strong>Other</strong> • B@SE</li>
+                        </ul>
+                        <div class="pt-1">
+                            <a class="btn btn-primary btn-lg px-5 mr-3" href="https://bespoketheme.neto.com.au/" target="_blank" rel="noreferrer">Website</a>
+                            <a class="disabled" href="https://github.com/mmwoods/Bespoke-Theme" target="_blank" rel="noreferrer">Source Restricted</a>
                         </div>
-				    </div>
-                    <!-- Portfolio: Item 2. -->
-                    <div class="all apps web column">
-                            <img id="treasure" class="img-responsive" src="images/apps-treasure.jpg" alt="Treasure">
-                            <div class="caption">
-                                <h1>Treasure</h1>
-                                <div class="line margin-bottom"></div>
-                                <ul>
-                                    <li class="work">Front-End</li>
-                                    <li class="work">Back-End</li>
-                                    <li class="work">Branding</li>
-                                    <li class="work">API Integration</li>
-                                </ul>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div id="project-2" class="row pb-5">
+                    <div class="col-12 col-lg-6">
+                        <a href="https://scope.netlify.com/" target="_blank" rel="noreferrer">
+                            <img class="img-fluid shadow" src="images/scope.png" alt="Project Scope">
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-2 pl-lg-5 pt-lg-5">
+                        <h5 class="pt-4">Project Scope</h5>
+                        <p>Parses markdown and calculates Coding, Design, and Total hours for each segment of a website Project Scope. Featuring a desktop app, PDF generation, and local storage.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>HTML5/CSS3</strong></li>
+                            <li><strong>JavaScript</strong> • jQuery</li>
+                            <li><strong>Frameworks</strong> • Electron</li>
+                            <li><strong>Design</strong> • Figma</li>
+                            <li><strong>Other</strong> • Node, Regex, Netlify</li>
+                        </ul>
+                        <div class="pt-1">
+                            <a class="btn btn-primary btn-lg px-5 mr-3" href="https://scope.netlify.com/" target="_blank" rel="noreferrer">Website</a>
+                            <a href="https://github.com/mmwoods/project_scope" target="_blank" rel="noreferrer">View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div id="experience" class="row justify-content-center pt-5">
+                    <div class="col-12 col-lg-6 text-left pt-5">
+                        <h3>Experience with the web</h3>
+                        <h4 class="text-uppercase text-left">Commercial & Freelance</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 text-left pt-4">
+                        <p>In five years of web development I have scoped, designed, coded, and maintained both eCommerce and static websites. As well as managing design projects, website go-lives and more.</p>
+                    </div>
+                </div>
+                <div id="wrapper-counts" class="row justify-content-center pt-2 pt-md-4 pb-5">
+                    <div class="col-12 col-lg-8">
+                        <div class="d-flex flex-wrap justify-content-around">
+                            <div class="text-center p-3 p-md-0">
+                                <h4>Updated</h4>
+                                <p><span id="count-stores">200</span>+</p>
+                                <h4>Online Stores</h4>
                             </div>
-				    </div>
-                    <!-- Portfolio: Item 3. -->
-                    <div class="all web column">
-                        <img id="university" class="img-responsive" src="images/web-university.jpg" alt="University Portfolio">
-                        <div class="caption">
-                            <h1>University</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">Front-End</li>
-                                <li class="work">Web Design</li>
-                                <li class="work">Blogging</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Portfolio: Item 4. -->
-                    <div class="all web column">
-                        <img id="personal" class="img-responsive" src="images/web-portfolio.jpg" alt="Personal Portfolio">
-                        <div class="caption">
-                            <h1>Portfolio</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">Front-End</li>
-                                <li class="work">Back-End</li>
-                                <li class="work">Branding</li>
-                            </ul>
-                        </div>
-				    </div>
-                    <!-- Portfolio: Item 5. -->
-                    <div class="all 3d column">
-                        <img id="phone" class="img-responsive" src="images/3d-phone.jpg" alt="3D Smart Phone">
-                        <div class="caption">
-                            <h1>Phone</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">3D Modelling</li>
-                                <li class="work">Marketing</li>
-                            </ul>
-                        </div>
-				    </div>
-                    <!-- Portfolio: Item 6. -->
-                    <div class="all 3d column">
-                        <img id="gym" class="img-responsive" src="images/3d-gym.jpg" alt="Gym Equipment">
-                        <div class="caption">
-                            <h1>Total Gym</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">3D Modelling</li>
-                                <li class="work">Marketing</li>
-                            </ul>
-                        </div>
-				    </div>
-                    <!-- Portfolio: Item 7. -->
-                    <div class="all apps web column">
-                            <img id="capool" class="img-responsive" src="images/apps-capool.jpg" alt="CaPool App">
-                            <div class="caption">
-                                <h1>CaPool</h1>
-                                <div class="line margin-bottom"></div>
-                                <ul>
-                                    <li class="work">Front End</li>
-                                    <li class="work">Back End</li>
-                                    <li class="work">API Integration</li>
-                                </ul>
+                            <div class="text-center p-3 p-md-0">
+                                <h4>Managed</h4>
+                                <p><span id="count-managed">10</span>+</p>
+                                <h4>Online Stores</h4>
                             </div>
-				    </div>
-                    <!-- Portfolio: Item 8. -->
-                    <div class="all web column">
-                            <img id="green" class="img-responsive" src="images/web-greenheart.jpg" alt="Green Heart">
-                            <div class="caption">
-                                <h1>Green Heart</h1>
-                                <div class="line margin-bottom"></div>
-                                <ul>
-                                    <li class="work">Front End</li>
-                                    <li class="work">Design</li>
-                                    <li class="work">Branding</li>
-                                </ul>
+                            <div class="text-center p-3 p-md-0">
+                                <h4>Theme for</h4>
+                                <p><span id="count-theme">15</span></p>
+                                <h4>Online Stores</h4>
                             </div>
-				    </div>
-                    <!-- Portfolio: Item 9. -->
-                    <div class="all web column">
-                        <img id="wisdom" class="img-responsive" src="images/web-wisdomfactory.png" alt="Wisdom Factory">
-                        <div class="caption">
-                            <h1>Wisdom Factory</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">Front End</li>
-                                <li class="work">Design</li>
-                                <li class="work">Email</li>
-                            </ul>
                         </div>
                     </div>
-                    <!-- Portfolio: Item 10. -->
-                    <div class="all graphic column">
-                        <img id="leader" class="img-responsive" src="images/graphic-leaders.png" alt="Female Leaders">
-                        <div class="caption">
-                            <h1>Just the Facts</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">Design</li>
-                                <li class="work">Adobe Illustrator</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Portfolio: Item 11. -->
-                    <div class="all graphic column">
-                        <img id="recognition" class="img-responsive" src="images/graphic-recognition.png"
-                             alt="Facial Recognition">
-                        <div class="caption">
-                            <h1>Just the Facts</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">Design</li>
-                                <li class="work">Adobe Illustrator</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Portfolio: Item 12. -->
-                    <div class="all graphic column">
-                        <img id="spending" class="img-responsive" src="images/graphic-spending.png"
-                             alt="US Spending">
-                        <div class="caption">
-                            <h1>Just the Facts</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">Design</li>
-                                <li class="work">Adobe Illustrator</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Portfolio: Item 13. -->
-                    <div class="all graphic column">
-                        <img id="terror" class="img-responsive" src="images/graphic-terror.png"
-                             alt="Terror Attacks">
-                        <div class="caption">
-                            <h1>Just the Facts</h1>
-                            <div class="line margin-bottom"></div>
-                            <ul>
-                                <li class="work">Design</li>
-                                <li class="work">Adobe Illustrator</li>
-                            </ul>
-                        </div>
-                    </div>
-				</div>
-        </section>
-       
-        <!-- Contact: Section 4. -->
-        <section id="contact" class="grey-bg section-padding">
-            <div class="container">
-                <h1>Contact</h1>
-                <div class="line"></div>
-                
-                <p class="center-text">If you feel my abilities could be beneficial to yourself, your business, or you have a job opportunity, please contact me below.</p>
-                
-                <p class="center-text button-contact"><a href="mailto:mw@mitchellmwoods.com" target="_top">Contact Me</a></p>
+                </div>
             </div>
-        </section>
-        
-        <!-- Footer: Section 5. -->
-        <footer>
-            <!-- Social Links -->
-            <a href="https://au.linkedin.com/in/mitchwoods"><img id="linkedin" class="img-icon" src="images/icon-linkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/MITCH.W00DS"><img id="facebook" class="img-icon" src="images/icon-facebook.png" alt="Facebook"></a>
-            <a href="https://github.com/mmwoods"><img id="github" class="img-icon" src="images/icon-github.png" alt="GitHub"></a>
-            <!-- Copyright -->
-            <p class="center-text footer-spacing">&copy; Mitchell Woods 2018</p>
+        </div>
+
+        <footer id="contact" class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="logo">mitchell woods</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center pt-2">
+                <div class="col-6 text-center">
+                    <div class="d-md-flex justify-content-around">
+                        <a class="pr-2 pr-md-0" href="mailto:mw@mitchellmwoods.com">email</a>
+                        <a class="pr-2 pr-md-0" href="tel:0409463422">phone</a>
+                        <a class="pr-2 pr-md-0" href="files/Mitchell_Woods_Resume.pdf" download>resume</a>
+                        <a class="pr-2 pr-md-0" href="https://www.linkedin.com/in/mitchellmwoods/">LinkedIn</a>
+                        <a href="https://github.com/mmwoods">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <!-- Main JavaScript -->
+            <script src="js/main.js"></script>
         </footer>
     </body>
+</html>
