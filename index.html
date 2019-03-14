@@ -22,7 +22,7 @@
     </head>
     <body>
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="#">mitchell woods</a>
+            <a class="navbar-brand logo" href="#">mitchell woods</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,21 +31,21 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active pr-3">
-                        <a class="nav-link" href="#">intro <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#wrapper-intro">intro <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item pr-3">
                         <a class="nav-link" href="#wrapper-projects">projects</a>
                     </li>
                     <li class="nav-item pr-3">
-                        <a class="nav-link" href="#">experience</a>
+                        <a class="nav-link" href="#wrapper-experience">experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
+                        <a class="nav-link" href="#wrapper-contact">contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="container mt-5">
+        <div id="wrapper-intro" class="container mt-5">
             <div class="row justify-content-center mt-5">
                 <div class="col-12 text-center mt-5">
                     <h1>Front End Developer and Designer</h1>
@@ -59,25 +59,128 @@
         <div class="container-fluid mt-5">
             <div class="row justify-content-center bg-grey offset-top">
                 <div class="col-10 text-center">
-                    <img class="img-fluid" src="images/bespoke.jpg">
+                    <img class="img-fluid negative-offset-top shadow" src="images/bespoke.jpg" alt="Bespoke Premium Theme">
                 </div>
             </div>
         </div>
 
         <!-- Projects -->
-        <div id="wrapper-projects" class="container-fluid bg-grey pb-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 text-right">
-                    <h3>Projects I have been working on</h3>
-                    <h4 class="text-uppercase">Currently focusing on React</h4>
+        <div class="bg-grey pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 text-right pb-5">
+                        <h3>Projects I have been working on</h3>
+                        <h4 class="text-uppercase">Currently focusing on React</h4>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <div id="wrapper-projects" class="bg-gradient">
+            <div class="container pt-5 pb-5">
+                <!-- Item 1 -->
+                <div class="row position-relative negative-offset-top-sm">
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid shadow" src="images/bespoke.jpg" alt="Bespoke Premium Theme">
+                    </div>
+                    <div class="col-12 col-lg-6 pt-2 pl-lg-5 pt-lg-5">
+                        <h5 class="pt-4 mt-1">Bespoke Premium Theme</h5>
+                        <p>The first drag & drop Bootstrap 4 based theme on the Neto eCommerce platform. Featuring a component based design, to allow for easier code maintenance, readability, and additions.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>HTML5/CSS3</strong> • Less, Gulp</li>
+                            <li><strong>JavaScript</strong> • jQuery, AJAX</li>
+                            <li><strong>Frameworks</strong> • Bootstrap 4</li>
+                            <li><strong>Design</strong> • Figma</li>
+                            <li><strong>Other</strong> • B@SE</li>
+                        </ul>
+                        <div class="pt-1">
+                            <a class="btn btn-primary btn-lg px-5 mr-3" href="https://bespoketheme.neto.com.au/" target="_blank">Website</a>
+                            <a class="disabled" href="https://github.com/mmwoods/Bespoke-Theme" target="_blank">Source Restricted</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="row pb-5">
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid shadow" src="images/bespoke.jpg" alt="Bespoke Premium Theme">
+                    </div>
+                    <div class="col-12 col-lg-6 pt-2 pl-lg-5 pt-lg-5">
+                        <h5 class="pt-4">Bespoke Premium Theme</h5>
+                        <p>The first drag & drop Bootstrap 4 based theme on the Neto eCommerce platform. Featuring a component based design, to allow for easier code maintenance, readability, and additions.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>HTML5/CSS3</strong> • Less, Gulp</li>
+                            <li><strong>JavaScript</strong> • jQuery, AJAX</li>
+                            <li><strong>Frameworks</strong> • Bootstrap 4</li>
+                            <li><strong>Design</strong> • Figma</li>
+                            <li><strong>Other</strong> • B@SE</li>
+                        </ul>
+                        <div class="pt-1">
+                            <a class="btn btn-primary btn-lg px-5 mr-3" href="https://bespoketheme.neto.com.au/" target="_blank">Website</a>
+                            <a href="https://github.com/mmwoods/Bespoke-Theme" target="_blank">View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div id="wrapper-experience" class="row justify-content-center pt-5">
+                    <div class="col-12 col-lg-6 text-left pt-5">
+                        <h3>Experience with the web</h3>
+                        <h4 class="text-uppercase text-left">Commercial & Freelance</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 text-left pt-4">
+                        <p>In five years of web development I have scoped, designed, coded, and maintained both eCommerce and static websites. As well as managing design projects, website go-lives and more.</p>
+                    </div>
+                </div>
+                <div id="wrapper-counts" class="row justify-content-center pt-4 pb-5">
+                    <div class="col-12 col-lg-8">
+                        <div class="d-flex justify-content-around">
+                            <div class="text-center">
+                                <h4>Updated</h4>
+                                <p><span id="count-stores">200</span>+</p>
+                                <h4>Online Stores</h4>
+                            </div>
+                            <div class="text-center">
+                                <h4>Managed</h4>
+                                <p><span id="count-managed">10</span>+</p>
+                                <h4>Online Stores</h4>
+                            </div>
+                            <div class="text-center">
+                                <h4>Theme for</h4>
+                                <p><span id="count-theme">15</span></p>
+                                <h4>Online Stores</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="wrapper-contact" class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="logo">mitchell woods</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center pt-2">
+                <div class="col-6 text-center">
+                    <div class="d-md-flex justify-content-around">
+                        <a class="pr-2 pr-md-0" href="mailto:mw@mitchellmwoods.com">email</a>
+                        <a class="pr-2 pr-md-0" href="tel:0409463422">phone</a>
+                        <a class="pr-2 pr-md-0" href="files/Mitchell_Woods_Resume.pdf" download>resume</a>
+                        <a class="pr-2 pr-md-0" href="https://www.linkedin.com/in/mitchellmwoods/">LinkedIn</a>
+                        <a href="https://github.com/mmwoods">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        </footer>
     </body>
 </html>
