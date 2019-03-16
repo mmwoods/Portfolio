@@ -110,3 +110,11 @@ img.shadow {
 #wrapper-counts p {
     margin-bottom: 5px;
 }
+
+/* Image Effects */
+img {
+    transition: all 400ms;
+}
+img:hover {
+    transform: scale(1.04);
+}
