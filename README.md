@@ -3,3 +3,5 @@
 # Portfolio
 
 Personal Portfolio for Mitchell Woods
+
+![Portfolio Preview](https://mitchellmwoods.com/images/portfolio.png)

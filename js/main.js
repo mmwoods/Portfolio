@@ -1,5 +1,5 @@
 // CountUp Effect
-function countUp(number, time, target){
+const countUp = (number, time, target) => {
     for (let i = 0; i <= number; i++) {
         setTimeout(function(){
             $(target).html(i);
@@ -27,3 +27,13 @@ const count = target => {
 };
 
 targets.forEach(count);
+
+// Navigation Links
+const highlightMenu = () => {
+    $('.nav-item').on('click', function(){
+        $('.nav-item').removeClass('active');
+        $(this).addClass('active');
+    });
+}
+
+highlightMenu();
