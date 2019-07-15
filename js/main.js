@@ -36,4 +36,21 @@ const highlightMenu = () => {
     });
 }
 
+// Alternate Main Image
+const alternateImage = () => {
+    const images = ['images/bespoke.jpg', 'images/scope.png', 'images/styleguide.png', 'images/wellbeing.png', 'images/storybook.png'];
+
+    const getRandomInt = (min, max) => {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    const randomIndex = getRandomInt(0, images.length - 1);
+
+    $('#projects').find('a').attr('href', `#project-${randomIndex + 1}`);
+    $('#projects').find('img').attr('src', images[randomIndex]);
+}
+
 highlightMenu();
+alternateImage();
