@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header } from "..";
+import { Header, Footer } from "..";
 
 export const StackNavigation = (props: { children: React.ReactNode }) => {
   const { children } = props;
@@ -11,7 +11,7 @@ export const StackNavigation = (props: { children: React.ReactNode }) => {
 
       <div style={{ padding: 8 }}>{children}</div>
 
-      {/* Footer */}
+      <Footer />
     </>
   );
 };
