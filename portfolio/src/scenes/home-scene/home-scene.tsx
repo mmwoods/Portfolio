@@ -1,6 +1,11 @@
 import React from "react";
 
-import { Project, StackNavigation, Introduction } from "../../components/";
+import {
+  Project,
+  StackNavigation,
+  Introduction,
+  Experience
+} from "../../components/";
 import { projectsData } from "../../data";
 
 export const HomeScene = () => (
@@ -17,5 +22,7 @@ export const HomeScene = () => (
         repo={item.repo}
       />
     ))}
+
+    <Experience />
   </StackNavigation>
 );
