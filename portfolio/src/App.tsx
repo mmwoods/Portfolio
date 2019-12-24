@@ -1,7 +1,7 @@
 import React from "react";
 
-import { HomeScene } from "./scenes/";
+import { Routes } from "./components";
 
-const App: React.FC = () => <HomeScene />;
+const App: React.FC = () => <Routes />;
 
 export default App;
