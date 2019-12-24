@@ -13,8 +13,8 @@ export const Footer = () => {
       </h1>
 
       <div style={{ display: "flex", justifyContent: "space-around" }}>
-        {links.map(link => (
-          <p>{link}</p>
+        {links.map((link, index) => (
+          <p key={index}>{link}</p>
         ))}
       </div>
     </footer>

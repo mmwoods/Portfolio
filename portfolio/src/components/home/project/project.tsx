@@ -12,10 +12,13 @@ export const Project = (props: ProjectProps) => (
 
     {props.technology &&
       props.technology.map((item, index) => (
-        <p style={{ marginBottom: "5px", color: "rgba(14, 30, 37, 0.54)" }}>
+        <p
+          key={index}
+          style={{ marginBottom: "5px", color: "rgba(14, 30, 37, 0.54)" }}
+        >
           <strong>{item.category}</strong> •{" "}
           {item.list.map((item, index) => (
-            <span>{item} </span>
+            <span key={index}>{item} </span>
           ))}{" "}
         </p>
       ))}
