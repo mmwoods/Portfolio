@@ -9,7 +9,7 @@ import {
 import { projectsData } from "../../data";
 
 export const HomeScene = () => (
-  <StackNavigation>
+  <StackNavigation testID="home-scene">
     <Introduction />
 
     {projectsData.map((item, index) => (
