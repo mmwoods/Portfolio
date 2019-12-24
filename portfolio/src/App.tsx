@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { projectsData } from "./data";
+import { Project } from "./project";
+import { Header } from "./header";
+
+const App: React.FC = () => (
+  <>
+    <Header title="mitchell woods" />
+
+    {projectsData.map((item, index) => (
+      <Project
+        key={item.index}
+        title={item.title}
+        summary={item.summary}
+        technology={item.technology}
+        website={item.website}
+        repo={item.repo}
+      />
+    ))}
+  </>
+);
 
 export default App;
