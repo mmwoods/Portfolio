@@ -1,12 +1,10 @@
 import React from "react";
 
-import { Header, Project } from "../../components/";
+import { Project, StackNavigation } from "../../components/";
 import { projectsData } from "../../data";
 
 export const HomeScene = () => (
-  <>
-    <Header title="mitchell woods" />
-
+  <StackNavigation>
     {projectsData.map((item, index) => (
       <Project
         key={item.index}
@@ -17,5 +15,5 @@ export const HomeScene = () => (
         repo={item.repo}
       />
     ))}
-  </>
+  </StackNavigation>
 );
