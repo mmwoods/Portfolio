@@ -1,11 +1,9 @@
 import React from "react";
 
 import { Header, Footer } from "..";
+import { StackNavigationProps } from "./stack-navigation.interaface";
 
-export const StackNavigation = (props: {
-  children: React.ReactNode;
-  testID: string;
-}) => {
+export const StackNavigation = (props: StackNavigationProps) => {
   const { children, testID } = props;
 
   return (

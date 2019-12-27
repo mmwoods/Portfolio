@@ -8,7 +8,7 @@ export interface ProjectProps {
   /** Link to public hosted website. */
   website: string;
   /** Source location for image. */
-  image?: string;
+  src?: string;
   /** Technology used in the project. */
   technology?: {
     category: string;

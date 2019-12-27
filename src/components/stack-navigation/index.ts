@@ -1,1 +1,1 @@
-export * from "./stack-naviagtion";
+export * from "./stack-navigation";
