@@ -1,6 +1,7 @@
 import React, { CSSProperties } from "react";
 
 import { ProjectProps } from "./project.interface";
+import css from "./project.module.css";
 
 /**
  * Split layout with image, title, summary, bullet points, and links to website and/or repository.
@@ -10,7 +11,7 @@ export const Project = (props: ProjectProps) => {
 
   return (
     <div style={styles.wrapper}>
-      <div style={styles.container}>
+      <div className={css.container}>
         <div>
           <img
             style={styles.image}
@@ -18,7 +19,7 @@ export const Project = (props: ProjectProps) => {
             alt={title}
           />
         </div>
-        <div style={styles.row}>
+        <div className={css.row}>
           <h3 style={styles.title}>{title}</h3>
           <p style={styles.subtitle}>{summary}</p>
 
@@ -64,8 +65,6 @@ export const Project = (props: ProjectProps) => {
 
 interface ProjectStyles {
   wrapper: CSSProperties;
-  container: CSSProperties;
-  row: CSSProperties;
   title: CSSProperties;
   subtitle: CSSProperties;
   button: CSSProperties;
@@ -79,17 +78,7 @@ const styles: ProjectStyles = {
     justifyContent: "center",
     marginTop: 60
   },
-  container: {
-    paddingBottom: "3rem",
-    display: "flex",
-    maxWidth: "1140px",
-    alignItems: "center"
-  },
-  row: {
-    width: "100%",
-    paddingLeft: 50,
-    maxWidth: "500px"
-  },
+
   button: {
     backgroundColor: "#95bbdb",
     borderColor: "#95bbdb",

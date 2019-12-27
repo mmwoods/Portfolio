@@ -1,0 +1,25 @@
+.container {
+  padding: 1.8rem 3rem;
+  display: flex;
+  max-width: 1140px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 25px;
+}
+
+@media (min-width: 850px) {
+  .container {
+    flex-direction: row;
+    padding: 0 0 3rem 0;
+  }
+
+  .row {
+    padding-left: 50px;
+    margin: 0;
+  }
+}
