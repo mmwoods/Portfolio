@@ -27,7 +27,8 @@ export const projectsData = [
       }
     ],
     website: "https://bespoketheme.neto.com.au/",
-    repo: "https://github.com/mmwoods/Bespoke-Theme"
+    repo: "https://github.com/mmwoods/Bespoke-Theme",
+    src: "bespoke.jpg"
   },
   {
     index: 1,
@@ -61,7 +62,8 @@ export const projectsData = [
       }
     ],
     website: "https://scope.netlify.com/",
-    repo: "https://github.com/mmwoods/project_scope"
+    repo: "https://github.com/mmwoods/project_scope",
+    src: "scope.png"
   },
   {
     index: 2,
@@ -91,7 +93,8 @@ export const projectsData = [
       }
     ],
     website: "#",
-    repo: "#"
+    repo: "#",
+    src: "styleguide.png"
   },
   {
     index: 3,
@@ -121,7 +124,8 @@ export const projectsData = [
       }
     ],
     website: "#",
-    repo: "#"
+    repo: "#",
+    src: "wellbeing.png"
   },
   {
     index: 4,
@@ -147,6 +151,7 @@ export const projectsData = [
       }
     ],
     website: "#",
-    repo: "#"
+    repo: "#",
+    src: "storybook.png"
   }
 ];

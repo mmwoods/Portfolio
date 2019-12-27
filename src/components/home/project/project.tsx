@@ -1,6 +1,8 @@
 import React from "react";
 
 import { ProjectProps } from "./project.interface";
+import logo from "../../../logo.svg";
+import bespoke from "../../../data/images/bespoke.jpg";
 
 /**
  * Split layout with image, title, summary, bullet points, and links to website and/or repository.
@@ -9,6 +11,12 @@ export const Project = (props: ProjectProps) => (
   <div style={{ paddingBottom: "3rem", maxWidth: "50%" }}>
     <h3>{props.title}</h3>
     <p style={{ color: "rgba(14, 30, 37, 0.54)" }}>{props.summary}</p>
+
+    <img
+      src={require(`../../../data/images/${props.src}`)}
+      className="App-logo"
+      alt="logo"
+    />
 
     {props.technology &&
       props.technology.map((item, index) => (

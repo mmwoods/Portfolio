@@ -20,6 +20,7 @@ export const HomeScene = () => (
         technology={item.technology}
         website={item.website}
         repo={item.repo}
+        src={item.src}
       />
     ))}
 
