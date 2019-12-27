@@ -4,14 +4,14 @@ export interface ProjectProps {
   /** Description of the project. */
   summary: string;
   /** Link to public repository. */
-  repo: string;
+  repo?: string;
   /** Link to public hosted website. */
-  website: string;
+  website?: string;
   /** Source location for image. */
   src?: string;
   /** Technology used in the project. */
   technology?: {
     category: string;
-    list: string[];
+    list?: string[];
   }[];
 }

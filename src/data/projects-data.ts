@@ -37,8 +37,7 @@ export const projectsData = [
       "Parses markdown and calculates Coding, Design, and Total hours for each segment of a website Project Scope. Featuring a desktop app, PDF generation, and local storage.",
     technology: [
       {
-        category: "HTML5/CSS3",
-        list: [""]
+        category: "HTML5/CSS3"
       },
       {
         category: "JavaScript",
@@ -72,12 +71,10 @@ export const projectsData = [
       "Defines the code standards, development process, and getting started/learning resources, for new developers within the team.",
     technology: [
       {
-        category: "HTML5/CSS3",
-        list: [""]
+        category: "HTML5/CSS3"
       },
       {
-        category: "JavaScript/TypeScript",
-        list: [""]
+        category: "JavaScript/TypeScript"
       },
       {
         category: "Frameworks",
@@ -92,8 +89,6 @@ export const projectsData = [
         list: ["Markdown"]
       }
     ],
-    website: "#",
-    repo: "#",
     src: "styleguide.png"
   },
   {
@@ -123,8 +118,6 @@ export const projectsData = [
         list: ["Git", "Netlify"]
       }
     ],
-    website: "#",
-    repo: "#",
     src: "wellbeing.png"
   },
   {
@@ -150,8 +143,6 @@ export const projectsData = [
         list: ["Webpack", "Lerna", "Git", "Netlify"]
       }
     ],
-    website: "#",
-    repo: "#",
     src: "storybook.png"
   }
 ];
