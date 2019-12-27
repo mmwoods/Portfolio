@@ -27,10 +27,13 @@ interface FooterStyles {
 
 const styles: FooterStyles = {
   wrapper: {
-    textAlign: "center"
+    textAlign: "center",
+    maxWidth: 520,
+    margin: "auto",
+    padding: "35px 0"
   },
   title: {
-    margin: 0,
+    margin: "0 0 18px 0",
     fontWeight: 400,
     fontSize: 34
   },

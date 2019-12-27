@@ -1,24 +1,35 @@
 import React, { CSSProperties } from "react";
 
-export const Introduction = () => (
-  <>
-    <div style={styles.wrapper}>
-      <h1 style={styles.title}>Software Engineer/Designer</h1>
-      <p style={styles.subtitle}>
-        Passionate about how design affects user’s interactions and
-        understanding, specifically through minimalist style.
-      </p>
-    </div>
+export const Introduction = () => {
+  const images = [
+    "scope.png",
+    "storybook.png",
+    "styleguide.png",
+    "wellbeing.png"
+  ];
 
-    <div style={styles.imageWrapper}>
-      <img
-        style={styles.image}
-        src={require("../../../data/images/scope.png")}
-        alt={"title"}
-      />
-    </div>
-  </>
-);
+  return (
+    <>
+      <div style={styles.wrapper}>
+        <h1 style={styles.title}>Software Engineer/Designer</h1>
+        <p style={styles.subtitle}>
+          Passionate about how design affects user’s interactions and
+          understanding, specifically through minimalist style.
+        </p>
+      </div>
+
+      <div style={styles.imageWrapper}>
+        <img
+          style={styles.image}
+          src={require(`../../../data/images/${
+            images[Math.floor(Math.random() * images.length)]
+          }`)}
+          alt={"title"}
+        />
+      </div>
+    </>
+  );
+};
 
 interface IntroductionStyles {
   wrapper: CSSProperties;
