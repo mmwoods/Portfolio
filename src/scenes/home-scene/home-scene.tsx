@@ -4,7 +4,8 @@ import {
   Project,
   StackNavigation,
   Introduction,
-  Experience
+  Experience,
+  Title
 } from "../../components/";
 import { projectsData } from "../../data";
 
@@ -12,7 +13,9 @@ export const HomeScene = () => (
   <StackNavigation testID="home-scene">
     <Introduction />
 
-    {projectsData.map((item, index) => (
+    <Title />
+
+    {projectsData.map(item => (
       <Project
         key={item.index}
         title={item.title}
