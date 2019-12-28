@@ -43,11 +43,19 @@ export const Footer = () => {
 
       <div className={css.links}>
         {links.map((link, index) => (
-          <a key={index} href={link.url} target="_blank" rel="noreferrer">
+          <a
+            className={css.link}
+            key={index}
+            href={link.url}
+            target="_blank"
+            rel="noreferrer"
+          >
             {link.label}
           </a>
         ))}
-        <p onClick={goToResume}>Resume</p>
+        <p className={css.link} onClick={goToResume}>
+          Resume
+        </p>
       </div>
     </footer>
   );

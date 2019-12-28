@@ -17,16 +17,14 @@
   justify-content: space-around;
 }
 
-a,
-p {
+.link {
   text-decoration: none;
   font-weight: 400;
   color: #333;
   cursor: pointer;
 }
 
-a:hover,
-p:hover {
+.link:hover {
   text-decoration: underline;
   color: #95bbdb;
 }
