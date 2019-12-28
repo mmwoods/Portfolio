@@ -1,44 +1,54 @@
-import React, { CSSProperties } from "react";
+import { navigate } from "@reach/router";
+import React from "react";
+
+import { NavigationConstants } from "../navigation/";
+import css from "./footer.module.css";
 
 /**
  * Renders a footer element for the site.
  */
 export const Footer = () => {
-  const links = ["email", "phone", "resume", "LinkedIn", "GitHub"];
+  const links = [
+    {
+      label: "email",
+      url: "mailto:mw@mitchellmwoods.com"
+    },
+    {
+      label: "phone",
+      url: "tel:0409463422"
+    },
+    {
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/mitchellmwoods/"
+    },
+    {
+      label: "GitHub",
+      url: "https://github.com/mmwoods"
+    }
+  ];
+
+  const goHome = () => {
+    navigate(NavigationConstants.home);
+  };
+
+  const goToResume = () => {
+    navigate(NavigationConstants.resume);
+  };
 
   return (
-    <footer style={styles.wrapper}>
-      <h1 style={styles.title}>mitchell woods</h1>
+    <footer className={css.wrapper}>
+      <h1 onClick={goHome} className={css.title}>
+        mitchell woods
+      </h1>
 
-      <div style={styles.links}>
+      <div className={css.links}>
         {links.map((link, index) => (
-          <p key={index}>{link}</p>
+          <a key={index} href={link.url} target="_blank" rel="noreferrer">
+            {link.label}
+          </a>
         ))}
+        <p onClick={goToResume}>Resume</p>
       </div>
     </footer>
   );
-};
-
-interface FooterStyles {
-  wrapper: CSSProperties;
-  title: CSSProperties;
-  links: CSSProperties;
-}
-
-const styles: FooterStyles = {
-  wrapper: {
-    textAlign: "center",
-    maxWidth: 520,
-    margin: "auto",
-    padding: "35px 0"
-  },
-  title: {
-    margin: "0 0 18px 0",
-    fontWeight: 400,
-    fontSize: 34
-  },
-  links: {
-    display: "flex",
-    justifyContent: "space-around"
-  }
 };
