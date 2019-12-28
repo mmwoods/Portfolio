@@ -1,4 +1,6 @@
-import React, { CSSProperties } from "react";
+import React from "react";
+
+import css from "./introduction.module.css";
 
 export const Introduction = () => {
   const images = [
@@ -10,17 +12,17 @@ export const Introduction = () => {
 
   return (
     <>
-      <div style={styles.wrapper}>
-        <h1 style={styles.title}>Software Engineer/Designer</h1>
-        <p style={styles.subtitle}>
-          Passionate about how design affects user’s interactions and
-          understanding, specifically through minimalist style.
-        </p>
+      <div className={css.wrapper}>
+        <h1>Software Engineer/Designer</h1>
+        <h2 className={css.subtitle}>
+          <span>Passionate about how design affects user’s interactions</span>
+          <span>and understanding, specifically through minimalist style.</span>
+        </h2>
       </div>
 
-      <div style={styles.imageWrapper}>
+      <div className={css.imageWrapper}>
         <img
-          style={styles.image}
+          className={css.image}
           src={require(`../../../data/images/${
             images[Math.floor(Math.random() * images.length)]
           }`)}
@@ -29,38 +31,4 @@ export const Introduction = () => {
       </div>
     </>
   );
-};
-
-interface IntroductionStyles {
-  wrapper: CSSProperties;
-  title: CSSProperties;
-  subtitle: CSSProperties;
-  imageWrapper: CSSProperties;
-  image: CSSProperties;
-}
-
-const styles: IntroductionStyles = {
-  wrapper: {
-    textAlign: "center"
-  },
-  title: {
-    fontSize: 50,
-    color: "#333",
-    fontWeight: 400
-  },
-  subtitle: {
-    lineHeight: "28px",
-    fontSize: 20,
-    textAlign: "center",
-    color: "#496274",
-    fontWeight: 300
-  },
-  imageWrapper: {
-    marginTop: 75,
-    display: "flex",
-    justifyContent: "center"
-  },
-  image: {
-    boxShadow: "0 .5rem 1rem rgba(0,0,0,.15)"
-  }
 };
