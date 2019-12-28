@@ -48,7 +48,7 @@ export const Footer = () => {
             key={index}
             href={link.url}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             {link.label}
           </a>

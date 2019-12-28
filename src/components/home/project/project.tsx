@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+import React from "react";
 
 import { ProjectProps } from "./project.interface";
 import css from "./project.module.css";

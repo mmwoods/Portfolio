@@ -10,7 +10,7 @@ export const StackNavigation = (props: StackNavigationProps) => {
     <div data-testid={`${testID}.stack-navigation`}>
       <Header title="mitchell woods" />
 
-      <div style={{ padding: 8 }}>{children}</div>
+      <div>{children}</div>
 
       {!resume ? <Footer /> : null}
     </div>
