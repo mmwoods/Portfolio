@@ -4,7 +4,7 @@ import { Header, Footer } from "..";
 import { StackNavigationProps } from "./stack-navigation.interaface";
 
 export const StackNavigation = (props: StackNavigationProps) => {
-  const { children, testID } = props;
+  const { children, testID, resume } = props;
 
   return (
     <div data-testid={`${testID}.stack-navigation`}>
@@ -12,7 +12,7 @@ export const StackNavigation = (props: StackNavigationProps) => {
 
       <div style={{ padding: 8 }}>{children}</div>
 
-      <Footer />
+      {!resume ? <Footer /> : null}
     </div>
   );
 };
