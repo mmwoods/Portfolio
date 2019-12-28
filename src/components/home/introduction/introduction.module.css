@@ -4,7 +4,7 @@
 }
 
 .background {
-  margin-top: 200px;
+  margin-top: 30px;
   background: #f3f5f7;
 }
 
@@ -15,7 +15,6 @@
 }
 
 .image {
-  margin-top: -125px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0.5rem 1rem;
 }
 
@@ -31,5 +30,13 @@
   .subtitle {
     display: inline-flex;
     flex-direction: column;
+  }
+
+  .background {
+    margin-top: 200px;
+  }
+
+  .image {
+    margin-top: -125px;
   }
 }
