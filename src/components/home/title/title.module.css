@@ -6,7 +6,7 @@
 }
 
 .container {
-  margin-top: 125px;
+  margin-top: 50px;
   text-align: right;
 }
 
@@ -21,4 +21,10 @@
   color: #95bbdb;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+  .container {
+    margin-top: 125px;
+  }
 }
