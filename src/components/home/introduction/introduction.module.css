@@ -3,13 +3,18 @@
   margin-top: 75px;
 }
 
+.background {
+  margin-top: 200px;
+  background: #f3f5f7;
+}
+
 .imageWrapper {
-  margin-top: 75px;
   display: flex;
   justify-content: center;
 }
 
 .image {
+  margin-top: -125px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0.5rem 1rem;
 }
 

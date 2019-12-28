@@ -20,14 +20,16 @@ export const Introduction = () => {
         </h2>
       </div>
 
-      <div className={css.imageWrapper}>
-        <img
-          className={css.image}
-          src={require(`../../../data/images/${
-            images[Math.floor(Math.random() * images.length)]
-          }`)}
-          alt={"title"}
-        />
+      <div className={css.background}>
+        <div className={css.imageWrapper}>
+          <img
+            className={css.image}
+            src={require(`../../../data/images/${
+              images[Math.floor(Math.random() * images.length)]
+            }`)}
+            alt={"title"}
+          />
+        </div>
       </div>
     </>
   );
