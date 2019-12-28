@@ -10,35 +10,37 @@ export const Project = (props: ProjectProps) => {
   const { title, technology, src, repo, website, summary } = props;
 
   return (
-    <div style={styles.wrapper}>
+    <div className={css.wrapper}>
       <div className={css.container}>
         <div>
           <img
-            style={styles.image}
+            className={css.image}
             src={require(`../../../data/images/${src}`)}
             alt={title}
           />
         </div>
         <div className={css.row}>
-          <h3 style={styles.title}>{title}</h3>
-          <p style={styles.subtitle}>{summary}</p>
+          <h3 className={css.title}>{title}</h3>
+          <p className={css.subtitle}>{summary}</p>
 
           {technology &&
             technology.map((category, index) => (
-              <p
-                key={index}
-                style={{
-                  marginBottom: "5px",
-                  color: "rgba(14, 30, 37, 0.54)"
-                }}
-              >
+              <p key={index} className={css.list}>
                 <span>
                   <strong>{category.category}</strong>
                   {category.list && category.list.length > 0 ? " • " : null}
                 </span>
                 {category.list &&
                   category.list.map((item, index) => (
-                    <span key={index}> {item} </span>
+                    <span key={index}>
+                      {" "}
+                      {item}
+                      {category.list &&
+                      category.list.length &&
+                      index !== category.list.length - 1
+                        ? ","
+                        : null}
+                    </span>
                   ))}{" "}
               </p>
             ))}
@@ -46,13 +48,14 @@ export const Project = (props: ProjectProps) => {
           <div style={{ marginTop: "20px" }}>
             {website ? (
               <a href={website}>
-                <button style={styles.button}>Website</button>
+                <button className={css.button}>Website</button>
               </a>
             ) : null}
 
             <a
               href={repo}
-              style={website ? styles.link : { ...styles.link, padding: "0px" }}
+              className={css.link}
+              style={!website ? { padding: "0px" } : undefined}
             >
               {website && repo ? "View Source" : "Source Restricted"}
             </a>
@@ -61,52 +64,4 @@ export const Project = (props: ProjectProps) => {
       </div>
     </div>
   );
-};
-
-interface ProjectStyles {
-  wrapper: CSSProperties;
-  title: CSSProperties;
-  subtitle: CSSProperties;
-  button: CSSProperties;
-  link: CSSProperties;
-  image: CSSProperties;
-}
-
-const styles: ProjectStyles = {
-  wrapper: {
-    display: "flex",
-    justifyContent: "center",
-    marginTop: 60
-  },
-
-  button: {
-    backgroundColor: "#95bbdb",
-    borderColor: "#95bbdb",
-    height: "32px",
-    lineHeight: "16px",
-    borderRadius: "20px",
-    fontSize: "16px",
-    padding: "0 3rem",
-    color: "#fff",
-    cursor: "pointer"
-  },
-  title: {
-    fontSize: 20
-  },
-  subtitle: {
-    color: "rgba(14, 30, 37, 0.54)",
-    lineHeight: "22px",
-    marginBottom: "18px"
-  },
-  link: {
-    height: "32px",
-    lineHeight: "16px",
-    fontSize: "16px",
-    padding: "0 1rem",
-    color: "rgba(14, 30, 37, 0.54)",
-    textDecoration: "none"
-  },
-  image: {
-    boxShadow: "0 .5rem 1rem rgba(0,0,0,.15)"
-  }
 };
