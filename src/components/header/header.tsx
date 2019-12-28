@@ -1,27 +1,25 @@
 import React from "react";
+import { navigate } from "@reach/router";
 
 import { HeaderProps } from "./header.interface";
+import { NavigationConstants } from "../navigation/";
+import css from "./header.module.css";
 
 /**
  * Renders a header element for the site.
  */
-export const Header = ({ title }: HeaderProps) => (
-  <header
-    style={{
-      background: "#fff",
-      marginBottom: "1.45rem",
-      position: "sticky",
-      top: 0,
-      zIndex: 1
-    }}
-  >
-    <div
-      style={{
-        margin: "0 auto",
-        padding: "1.45rem 1.0875rem"
-      }}
-    >
-      <h1 style={{ margin: 0, fontWeight: 400, fontSize: 34 }}>{title}</h1>
-    </div>
-  </header>
-);
+export const Header = ({ title }: HeaderProps) => {
+  const goHome = () => {
+    navigate(NavigationConstants.home);
+  };
+
+  return (
+    <header className={css.wrapper}>
+      <div className={css.container}>
+        <h1 onClick={goHome} className={css.title}>
+          {title}
+        </h1>
+      </div>
+    </header>
+  );
+};
