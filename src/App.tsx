@@ -2,6 +2,6 @@ import React from "react";
 
 import { Routes } from "./components";
 
-const App: React.FC = () => <Routes />;
+const App = () => <Routes />;
 
 export default App;
