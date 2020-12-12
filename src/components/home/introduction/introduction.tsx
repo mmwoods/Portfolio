@@ -7,7 +7,9 @@ export const Introduction = () => {
     "scope.png",
     "storybook.png",
     "styleguide.png",
-    "wellbeing.png"
+    "wellbeing.png",
+    "dk.png",
+    "bespoke.jpg"
   ];
 
   return (

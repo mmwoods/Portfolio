@@ -1,4 +1,77 @@
-export const projectsData = [
+export const CURRENT_PROJECTS = [
+  {
+    index: 0,
+    title: "Youfoodz",
+    summary:
+      "Refactored version of the existing Youfoodz eCommerce website, in the form of a SPA built using ReactJS, TypeScript, GraphQL, and Contentful.",
+    technology: [
+      {
+        category: "Frameworks/Packages",
+        list: ["ReactJS", "Storybook", "Apollo", "Lerna", "Redux"],
+      },
+      {
+        category: "Languages",
+        list: ["TypeScript", "GraphQL"]
+      },
+      {
+        category: "Testing",
+        list: ["React Testing Library", "Enzyme", "WebdriverIO"]
+      },
+      {
+        category: "Project",
+        list: ["ESlint", "Stylelint", "Prettier"]
+      },
+      {
+        category: "Design/Styles",
+        list: ["Figma", "CSS Modules", "Less"]
+      },
+      {
+        category: "Third-Party Software",
+        list: ["Shopify", "Contentful CMS", "Sentry", "Gitlab"]
+      }
+    ],
+    website: "https://spa.youfoodz.com/",
+    repo: undefined,
+    src: "yf.png"
+  },
+  {
+    index: 1,
+    title: "Doctor's Kitchen",
+    summary:
+      "The first white-label version of the Youfoodz eCommerce website, for co-branding a doctor's certified range of products.",
+    technology: [
+      {
+        category: "Frameworks/Packages",
+        list: ["ReactJS", "Storybook", "Apollo", "Lerna", "Redux"],
+      },
+      {
+        category: "Languages",
+        list: ["TypeScript", "GraphQL"]
+      },
+      {
+        category: "Testing",
+        list: ["React Testing Library", "Enzyme", "WebdriverIO"]
+      },
+      {
+        category: "Project",
+        list: ["ESlint", "Stylelint", "Prettier"]
+      },
+      {
+        category: "Design/Styles",
+        list: ["Figma", "CSS Modules", "Less"]
+      },
+      {
+        category: "Third-Party Software",
+        list: ["Shopify", "Contentful CMS", "Sentry", "Gitlab"]
+      }
+    ],
+    website: "https://doctorskitchen.byyoufoodz.com/",
+    repo: undefined,
+    src: "dk.png"
+  }
+];
+
+export const PAST_PROJECTS = [
   {
     index: 0,
     title: "Bespoke Premium Theme",
