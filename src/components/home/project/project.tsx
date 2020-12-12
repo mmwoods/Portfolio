@@ -15,7 +15,7 @@ export const Project = (props: ProjectProps) => {
         <div>
           <img
             className={css.image}
-            src={require(`../../../data/images/${src}`)}
+            src={src}
             alt={title}
           />
         </div>

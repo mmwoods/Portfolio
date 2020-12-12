@@ -1,3 +1,11 @@
+import bespoke from './images/bespoke.jpg'
+import dk from './images/dk.png'
+import yf from './images/yf.png'
+import scope from './images/scope.png'
+import storybook from './images/storybook.png'
+import styleGuide from './images/styleguide.png'
+import wellbeing from './images/wellbeing.png'
+
 export const CURRENT_PROJECTS = [
   {
     index: 0,
@@ -32,7 +40,7 @@ export const CURRENT_PROJECTS = [
     ],
     website: "https://spa.youfoodz.com/",
     repo: undefined,
-    src: "yf.png"
+    src: yf
   },
   {
     index: 1,
@@ -67,7 +75,7 @@ export const CURRENT_PROJECTS = [
     ],
     website: "https://doctorskitchen.byyoufoodz.com/",
     repo: undefined,
-    src: "dk.png"
+    src: dk
   }
 ];
 
@@ -101,7 +109,7 @@ export const PAST_PROJECTS = [
     ],
     website: "https://bespoketheme.neto.com.au/",
     repo: "https://github.com/mmwoods/Bespoke-Theme",
-    src: "bespoke.jpg"
+    src: bespoke
   },
   {
     index: 1,
@@ -135,7 +143,7 @@ export const PAST_PROJECTS = [
     ],
     website: "https://scope.netlify.com/",
     repo: "https://github.com/mmwoods/project_scope",
-    src: "scope.png"
+    src: scope
   },
   {
     index: 2,
@@ -162,7 +170,7 @@ export const PAST_PROJECTS = [
         list: ["Markdown"]
       }
     ],
-    src: "styleguide.png"
+    src: styleGuide
   },
   {
     index: 3,
@@ -191,7 +199,7 @@ export const PAST_PROJECTS = [
         list: ["Git", "Netlify"]
       }
     ],
-    src: "wellbeing.png"
+    src: wellbeing
   },
   {
     index: 4,
@@ -216,6 +224,6 @@ export const PAST_PROJECTS = [
         list: ["Webpack", "Lerna", "Git", "Netlify"]
       }
     ],
-    src: "storybook.png"
+    src: storybook
   }
 ];

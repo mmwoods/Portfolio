@@ -2,14 +2,21 @@ import React from "react";
 
 import css from "./introduction.module.css";
 
+import bespoke from '../../../data/images/bespoke.jpg'
+import dk from '../../../data/images/dk.png'
+import scope from '../../../data/images/scope.png'
+import storybook from '../../../data/images/storybook.png'
+import styleGuide from '../../../data/images/styleguide.png'
+import wellbeing from '../../../data/images/wellbeing.png'
+
 export const Introduction = () => {
   const images = [
-    "scope.png",
-    "storybook.png",
-    "styleguide.png",
-    "wellbeing.png",
-    "dk.png",
-    "bespoke.jpg"
+    bespoke,
+    dk,
+    scope,
+    storybook,
+    styleGuide,
+    wellbeing
   ];
 
   return (
@@ -26,9 +33,9 @@ export const Introduction = () => {
         <div className={css.imageWrapper}>
           <img
             className={css.image}
-            src={require(`../../../data/images/${
+            src={
               images[Math.floor(Math.random() * images.length)]
-            }`)}
+            }
             alt={"title"}
           />
         </div>
