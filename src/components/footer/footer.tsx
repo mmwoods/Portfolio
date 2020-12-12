@@ -1,5 +1,6 @@
 import { navigate } from "@reach/router";
 import React from "react";
+import { FOOTER_LINKS } from "../../data";
 
 import { NavigationConstants } from "../navigation/";
 import css from "./footer.module.css";
@@ -8,25 +9,6 @@ import css from "./footer.module.css";
  * Renders a footer element for the site.
  */
 export const Footer = () => {
-  const links = [
-    {
-      label: "email",
-      url: "mailto:mw@mitchellmwoods.com"
-    },
-    {
-      label: "phone",
-      url: "tel:0409463422"
-    },
-    {
-      label: "LinkedIn",
-      url: "https://www.linkedin.com/in/mitchellmwoods/"
-    },
-    {
-      label: "GitHub",
-      url: "https://github.com/mmwoods"
-    }
-  ];
-
   const goHome = () => {
     navigate(NavigationConstants.home);
   };
@@ -42,7 +24,7 @@ export const Footer = () => {
       </h1>
 
       <div className={css.links}>
-        {links.map((link, index) => (
+        {FOOTER_LINKS.map((link, index) => (
           <a
             className={css.link}
             key={index}
