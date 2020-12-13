@@ -45,20 +45,22 @@ export const Project = (props: ProjectProps) => {
               </p>
             ))}
 
-          <div style={{ marginTop: "20px" }}>
-            {website ? (
-              <a href={website}>
+          <div style={{ marginTop: "20px", display: 'flex', alignItems: 'center', justifyContent: 'flex-start', flexWrap: 'wrap' }}>
+            {website && (
+              <a href={website} style={{display: 'block', margin: '5px 0'}}>
                 <button className={css.button}>Website</button>
               </a>
-            ) : null}
+            )}
 
-            <a
+            {!repo && <p style={{padding: '5px 10px', margin: 0}}>Source Restricted</p>}
+
+            {repo && <a
               href={repo}
               className={css.link}
-              style={!website ? { padding: "0px" } : undefined}
+              style={{padding: '5px 10px', margin: 0}}
             >
-              {website && repo ? "View Source" : "Source Restricted"}
-            </a>
+              View Source
+            </a>}
           </div>
         </div>
       </div>

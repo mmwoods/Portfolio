@@ -22,10 +22,9 @@ export const Introduction = () => {
   return (
     <>
       <div className={css.wrapper}>
-        <h1 className={css.title}>Software Engineer/Designer</h1>
+        <h1 className={css.title}>Software Engineer</h1>
         <h2 className={css.subtitle}>
-          <span>Passionate about how design affects user’s interactions</span>
-          <span>and understanding, specifically through minimalist style.</span>
+          <span>Passionate about how design affects user’s interactions and understanding, specifically through minimalist style.</span>
         </h2>
       </div>
 

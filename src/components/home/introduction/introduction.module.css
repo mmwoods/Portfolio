@@ -1,6 +1,7 @@
 .wrapper {
   text-align: center;
   margin-top: 75px;
+  padding: 15px;
 }
 
 .background {
@@ -20,6 +21,13 @@
 
 .title {
   font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  max-width: 380px;
+  margin: auto;
+  text-align: justify;
 }
 
 @media (min-width: 600px) {

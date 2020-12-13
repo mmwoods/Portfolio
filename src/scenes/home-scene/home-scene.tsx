@@ -13,11 +13,10 @@ export const HomeScene = () => (
   <StackNavigation testID="home-scene">
     <Introduction />
 
-      <Title title={'Ongoing Projects'} subtitle={'Currently focusing on Youfoodz projects'} />
+    <Title title={'Ongoing Projects'} subtitle={'Currently working for Youfoodz'} />
 
     <div
       style={{
-        marginTop: "-100px",
         background: "linear-gradient(180deg,rgba(243,245,247,0) 0,#f3f5f7 100%)"
       }}
     >
@@ -34,11 +33,10 @@ export const HomeScene = () => (
       ))}
     </div>
 
-    <Title title={'Completed Projects'} subtitle={'Created for both commercial and freelance'} />
+    <Title title={'Completed Projects'} subtitle={'Created for commercial/freelance'} />
 
     <div
       style={{
-        marginTop: "-100px",
         background: "linear-gradient(180deg,rgba(243,245,247,0) 0,#f3f5f7 100%)"
       }}
     >
