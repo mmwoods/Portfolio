@@ -9,7 +9,7 @@ import wellbeing from './images/wellbeing.png'
 export const CURRENT_PROJECTS = [
   {
     index: 0,
-    title: "Youfoodz",
+    title: "Youfoodz: Single Page Application (2020+)",
     summary:
       "Refactored version of the existing Youfoodz eCommerce website, in the form of a SPA built using ReactJS, TypeScript, GraphQL, and Contentful.",
     technology: [
@@ -44,7 +44,7 @@ export const CURRENT_PROJECTS = [
   },
   {
     index: 1,
-    title: "Doctor's Kitchen",
+    title: "Youfoodz: Doctor's Kitchen (2020+)",
     summary:
       "The first white-label version of the Youfoodz eCommerce website, for co-branding a doctor's certified range of products.",
     technology: [
@@ -82,9 +82,76 @@ export const CURRENT_PROJECTS = [
 export const PAST_PROJECTS = [
   {
     index: 0,
-    title: "Bespoke Premium Theme",
+    title: "CUA: Digital Style Guide (2019)",
     summary:
-      "The first drag & drop, Bootstrap 4, based theme on the Neto eCommerce platform. Featuring a component based design, to allow for easier code maintenance, readability, and additions.",
+      "Defines the code standards, development process, and getting started/learning resources, for new developers within the team.",
+    technology: [
+      {
+        category: "Frameworks/Packages",
+        list: ["Docusaurus", "ReactJS", "Storybook"]
+      },
+      {
+        category: "Languages",
+        list: ["TypeScript"]
+      },
+      {
+        category: "Project",
+        list: ["Netlify"]
+      }
+    ],
+    src: styleGuide
+  },
+  {
+    index: 1,
+    title: "CUA: Financial Wellbeing Calculator (2019)",
+    summary:
+      "Displays a 13 question quiz which when complete assigns a category to a user (eg. doing well, struggling etc.). This category then affects the content displayed on the page (eg. blog posts, videos etc.).",
+    technology: [
+      {
+        category: "Frameworks/Packages",
+        list: ["ReactJS", "Storybook", "Percy"]
+      },
+      {
+        category: "Languages",
+        list: ["TypeScript", "GraphQL"]
+      },
+      {
+        category: "Project",
+        list: ["Netlify", "CSS Modules"]
+      },
+      {
+        category: "Third-Party Software",
+        list: ["Contentful CMS", "Squiz"]
+      },
+    ],
+    src: wellbeing
+  },
+  {
+    index: 2,
+    title: "CUA: ReactJS Component Library (2019)",
+    summary:
+      "Setup as a Lerna monorepo with every component including type checking, Storybook integration, usage docs, and full JSDoc commenting.",
+    technology: [
+      {
+        category: "Frameworks/Packages",
+        list: ["ReactJS", "Storybook", "Percy"]
+      },
+      {
+        category: "Languages",
+        list: ["TypeScript"]
+      },
+      {
+        category: "Project",
+        list: ["Webpack", "Lerna", "Netlify", "CSS Modules"]
+      }
+    ],
+    src: storybook
+  },
+  {
+    index: 3,
+    title: "Neto: Bespoke Premium Theme (2018-2019)",
+    summary:
+      "The first drag & drop based theme on the Neto eCommerce platform. Featuring a component based design, to allow for easier code maintenance, readability, and additions.",
     technology: [
       {
         category: "HTML5/CSS3",
@@ -112,10 +179,10 @@ export const PAST_PROJECTS = [
     src: bespoke
   },
   {
-    index: 1,
-    title: "Project Scope",
+    index: 4,
+    title: "Neto: Project Scope (2018)",
     summary:
-      "Parses markdown and calculates Coding, Design, and Total hours for each segment of a website Project Scope. Featuring a desktop app, PDF generation, and local storage.",
+      "Website and desktop app which parses markdown and calculates Coding, Design, and Total hours for each segment of a website Project Scope (saving 3+ hours per client).",
     technology: [
       {
         category: "HTML5/CSS3"
@@ -145,85 +212,4 @@ export const PAST_PROJECTS = [
     repo: "https://github.com/mmwoods/project_scope",
     src: scope
   },
-  {
-    index: 2,
-    title: "CUA Digital Style Guide",
-    summary:
-      "Defines the code standards, development process, and getting started/learning resources, for new developers within the team.",
-    technology: [
-      {
-        category: "HTML5/CSS3"
-      },
-      {
-        category: "JavaScript/TypeScript"
-      },
-      {
-        category: "Frameworks",
-        list: ["Docusaurus", "React"]
-      },
-      {
-        category: "Pipeline",
-        list: ["Git", "Netlify"]
-      },
-      {
-        category: "Other",
-        list: ["Markdown"]
-      }
-    ],
-    src: styleGuide
-  },
-  {
-    index: 3,
-    title: "Financial Wellbeing Calculator",
-    summary:
-      "Displays a 13 question quiz which when complete assigns a category to a user (eg. doing well, struggling etc.). This category then affects the content displayed on the page (eg. blog posts, videos etc.).",
-    technology: [
-      {
-        category: "HTML5/CSS3",
-        list: ["CSS Modules"]
-      },
-      {
-        category: "JavaScript",
-        list: ["React"]
-      },
-      {
-        category: "UI Testing",
-        list: ["Storybook", "Percy"]
-      },
-      {
-        category: "CMS",
-        list: ["Contentful", "Squiz"]
-      },
-      {
-        category: "Pipeline",
-        list: ["Git", "Netlify"]
-      }
-    ],
-    src: wellbeing
-  },
-  {
-    index: 4,
-    title: "ReactJS Component Library",
-    summary:
-      "Setup as a Lerna monorepo with every component including type checking, Storybook integration, usage docs, and full JSDoc commenting.",
-    technology: [
-      {
-        category: "HTML5/CSS3",
-        list: ["CSS Modules"]
-      },
-      {
-        category: "TypeScript",
-        list: ["React"]
-      },
-      {
-        category: "UI Testing",
-        list: ["Storybook", "Percy"]
-      },
-      {
-        category: "Pipeline",
-        list: ["Webpack", "Lerna", "Git", "Netlify"]
-      }
-    ],
-    src: storybook
-  }
 ];
