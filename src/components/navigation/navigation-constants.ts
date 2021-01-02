@@ -1,4 +1,4 @@
 export const NavigationConstants = {
   home: "/",
-  resume: "resume"
+  resume: "https://mitchellwoods.netlify.app/"
 };

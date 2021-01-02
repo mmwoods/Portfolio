@@ -19,7 +19,7 @@ export const CURRENT_PROJECTS = [
       },
       {
         category: "Languages",
-        list: ["TypeScript", "GraphQL"]
+        list: ["TypeScript", "GraphQL", "Less"]
       },
       {
         category: "Testing",
@@ -31,7 +31,7 @@ export const CURRENT_PROJECTS = [
       },
       {
         category: "Design/Styles",
-        list: ["Figma", "CSS Modules", "Less"]
+        list: ["Figma", "CSS Modules"]
       },
       {
         category: "Third-Party Software",
@@ -54,7 +54,7 @@ export const CURRENT_PROJECTS = [
       },
       {
         category: "Languages",
-        list: ["TypeScript", "GraphQL"]
+        list: ["TypeScript", "GraphQL", "Less"]
       },
       {
         category: "Testing",
@@ -66,7 +66,7 @@ export const CURRENT_PROJECTS = [
       },
       {
         category: "Design/Styles",
-        list: ["Figma", "CSS Modules", "Less"]
+        list: ["Figma", "CSS Modules"]
       },
       {
         category: "Third-Party Software",
