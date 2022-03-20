@@ -6,10 +6,12 @@ import storybook from './images/storybook.png'
 import styleGuide from './images/styleguide.png'
 import wellbeing from './images/wellbeing.png'
 
-export const CURRENT_PROJECTS = [
+export const CURRENT_PROJECTS = [];
+
+export const PAST_PROJECTS = [
   {
     index: 0,
-    title: "Youfoodz: Single Page Application (2020+)",
+    title: "Youfoodz: Single Page Application (2020-2021)",
     summary:
       "Refactored version of the existing Youfoodz eCommerce website, in the form of a SPA built using ReactJS, TypeScript, GraphQL, and Contentful.",
     technology: [
@@ -38,13 +40,13 @@ export const CURRENT_PROJECTS = [
         list: ["Shopify", "Contentful CMS", "Sentry", "Gitlab"]
       }
     ],
-    website: "https://spa.youfoodz.com/",
+    website: "https://youfoodz.com",
     repo: undefined,
     src: yf
   },
   {
     index: 1,
-    title: "Youfoodz: Doctor's Kitchen (2020+)",
+    title: "Youfoodz: Doctor's Kitchen (2020-2021)",
     summary:
       "The first white-label version of the Youfoodz eCommerce website, for co-branding a doctor's certified range of products.",
     technology: [
@@ -76,12 +78,9 @@ export const CURRENT_PROJECTS = [
     website: "https://doctorskitchen.byyoufoodz.com/",
     repo: undefined,
     src: dk
-  }
-];
-
-export const PAST_PROJECTS = [
+  },
   {
-    index: 0,
+    index: 2,
     title: "CUA: Digital Style Guide (2019)",
     summary:
       "Defines the code standards, development process, and getting started/learning resources, for new developers within the team.",
@@ -102,7 +101,7 @@ export const PAST_PROJECTS = [
     src: styleGuide
   },
   {
-    index: 1,
+    index: 3,
     title: "CUA: Financial Wellbeing Calculator (2019)",
     summary:
       "Displays a 13 question quiz which when complete assigns a category to a user (eg. doing well, struggling etc.). This category then affects the content displayed on the page (eg. blog posts, videos etc.).",
@@ -127,7 +126,7 @@ export const PAST_PROJECTS = [
     src: wellbeing
   },
   {
-    index: 2,
+    index: 4,
     title: "CUA: ReactJS Component Library (2019)",
     summary:
       "Setup as a Lerna monorepo with every component including type checking, Storybook integration, usage docs, and full JSDoc commenting.",
@@ -148,7 +147,7 @@ export const PAST_PROJECTS = [
     src: storybook
   },
   {
-    index: 3,
+    index: 5,
     title: "Neto: Bespoke Premium Theme (2018-2019)",
     summary:
       "The first drag & drop based theme on the Neto eCommerce platform. Featuring a component based design, to allow for easier code maintenance, readability, and additions.",
@@ -179,7 +178,7 @@ export const PAST_PROJECTS = [
     src: bespoke
   },
   {
-    index: 4,
+    index: 6,
     title: "Neto: Project Scope (2018)",
     summary:
       "Website and desktop app which parses markdown and calculates Coding, Design, and Total hours for each segment of a website Project Scope (saving 3+ hours per client).",
